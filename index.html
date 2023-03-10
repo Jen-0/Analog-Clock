@@ -12,8 +12,9 @@
             height: 620px;
             width: 620px;
             background: url(clock.png) no-repeat;
-            margin: 10px 180px;
+            margin: auto;
             background-size: 100%;
+            z-index : -1;
 
         }
 
@@ -24,6 +25,7 @@
             background: black;
             border-radius: 10px;
             transform-origin: bottom;
+            z-index: 2;
         }
 
         #hour {
@@ -32,7 +34,7 @@
             top: 214px;
             left: 306px;
             background-color: red;
-
+            z-index: 2;
         }
 
         #minute {
@@ -41,7 +43,7 @@
             top: 165px;
             left: 307.5px;
             background-color: red;
-
+            z-index: 2;
         }
 
         #second {
@@ -55,14 +57,14 @@
 
         #demo {
             position: absolute;
-            height: 10%;
-            width: 60%;
-            background-color: white;
             font-size: 20px;
-            color: gray;
-            top: 570px;
-            left: 550px;
-        }
+            
+            color: #00ff00;
+            top: 215px;
+            left: 308px;
+            z-index: 1;
+            transform: translate(-50%, -50%);
+          }
     </style>
 </head>
 
